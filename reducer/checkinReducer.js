@@ -21,7 +21,8 @@ export default function (state = initialState, action) {
         case TRY_ANOTHER:
             return {
                 ...state,
-                checkbus: null
+                checkbus: null,
+                bookingContract: null
             }
         case DOT_LOADING:
             return {

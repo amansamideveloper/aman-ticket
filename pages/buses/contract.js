@@ -61,12 +61,7 @@ function Daily(props) {
         props.bookingContract(yy)
     }
     function buyAnother() {
-        setDeparture(null)
-        setDestination(null)
-        setTimeTravel(null)
-        setFullname(null)
-        setPhoneNumber(null)
-        setEmail(null)
+        props.refresh()
     }
     function tryAnother() {
         props.tryAnother()
@@ -90,7 +85,8 @@ function Daily(props) {
         setbookingForm(true)
 
     }
-    if (props.daily.booking && departure) {
+
+    if (props.daily.bookingContract) {
 
 
 
